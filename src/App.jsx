@@ -55,6 +55,7 @@ function App() {
       const response = await fetch('https://pdf-word-image-to-texts-converter-backend.vercel.app/upload', {
         method: 'POST',
         body: formData,
+        mode: 'no-cors',
       });
 
       const data = await response.json(); // Parse JSON response
