@@ -1,0 +1,90 @@
+html, body {
+  height: 100%; /* Ensure full height for the body */
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.drop-zone.drag-over {
+  border-color: #007bff;
+  background-color: #e9f4ff;
+}
+
+.browse-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.browse-btn:hover {
+  background-color: #0056b3;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button.processing {
+  background-color: #ffc107;
+}
+
+.status.success {
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.status.error {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #333;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  margin-top: 15%;
+}
+
+.heart {
+  color: #28a745; /* Green heart */
+  font-size: 16px;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 920px) {
+  .footer {
+    margin-top: 90%;
+  }
+}
