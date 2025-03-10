@@ -52,7 +52,7 @@ function App() {
     formData.append('file', file); // Must match backend's multer field name
 
     try {
-      const response = await fetch('/upload', {
+      const response = await fetch('https://pdf-word-image-to-texts-converter-backend.vercel.app/upload', {
         method: 'POST',
         body: formData,
       });
